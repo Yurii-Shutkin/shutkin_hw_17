@@ -20,7 +20,7 @@ function mainFunction(callback) {
     if (!isInteger(num1)) return alert ('The 1st number is not valid');
     if (!isInteger(num2)) return alert ('The 2nd number is not valid');
     callback(num1, num2);
-};
+}
 
 const isInteger = function(arg) {
     return typeof arg === 'number' && !isNaN(arg) ? true : false;
@@ -29,7 +29,7 @@ const isInteger = function(arg) {
 function exponentiation(num, exp) {
     const result = Math.pow(num, exp);
     alert(result);
-};
+}
 
 function mult(num1, num2) {
     const result = num1 * num2;

@@ -5,7 +5,7 @@ function mainFunction(callback) {
     if (!isInteger(num1)) return alert ('The 1st number is not valid');
     if (!isInteger(num2)) return alert ('The 2nd number is not valid');
     callback(num1, num2);
-};
+}
 
 const isInteger = function(arg) {
     return typeof arg === 'number' && !isNaN(arg) ? true : false;
