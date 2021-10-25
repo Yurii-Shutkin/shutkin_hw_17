@@ -3,7 +3,7 @@ function choiseOfOperation(callback) {
     
     switch(message) {
         case '**': callback(mainFunction(exponentiation));
-        break;
+            break;
         case '*': callback(mainFunction(mult));
             break;
         case '/': callback(mainFunction(div));
