@@ -2,16 +2,15 @@ function choiseOfOperation(callback) {
     const message = prompt('What operation do you want to do (**, *, /, %)');
     
     switch(message) {
-        case '**': choiseOfOperation(mainFunction(exponentiation));
+        case '**': callback(mainFunction(exponentiation));
+        break;
+        case '*': callback(mainFunction(mult));
             break;
-        case '*': choiseOfOperation(mainFunction(mult));
+        case '/': callback(mainFunction(div));
             break;
-        case '/': choiseOfOperation(mainFunction(div));
-            break;
-        case '%': choiseOfOperation(mainFunction(mod));
+        case '%': callback(mainFunction(mod));
             break;
     }
-    callback(mainFunction(callback));
 }
 
 function mainFunction(callback) {
