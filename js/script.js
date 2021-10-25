@@ -14,7 +14,7 @@ const isInteger = function(arg) {
 function exponentiation(num, exp) {
     const result = Math.pow(num, exp);
     alert(result);
-};
+}
 
 function mult(num1, num2) {
     const result = num1 * num2;
