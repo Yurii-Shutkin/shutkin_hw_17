@@ -1,14 +1,14 @@
-function choiseOfOperation(callback) {
+function choiseOfOperation() {
     const message = prompt('What operation do you want to do (**, *, /, %)');
     
     switch(message) {
-        case '**': callback(mainFunction(exponentiation));
+        case '**': mainFunction(exponentiation);
             break;
-        case '*': callback(mainFunction(mult));
+        case '*': mainFunction(mult);
             break;
-        case '/': callback(mainFunction(div));
+        case '/': mainFunction(div);
             break;
-        case '%': callback(mainFunction(mod));
+        case '%': mainFunction(mod);
             break;
     }
 }
@@ -17,8 +17,8 @@ function mainFunction(callback) {
     const num1 = +prompt('Enter the 1st number');
     const num2 = +prompt('Enter the 2nd number');
     
-    if (!isInteger(num1)) return alert ('The 1st number is not valid');
-    if (!isInteger(num2)) return alert ('The 2nd number is not valid');
+    if (!isInteger(num1)) return alert('The 1st number is not valid');
+    if (!isInteger(num2)) return alert('The 2nd number is not valid');
     callback(num1, num2);
 }
 
